@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                // Compatible avec la plupart des navigateurs modernes
+    "module": "ES2020",                // Utilise les modules ECMAScript
+    "strict": true,                    // Active les vérifications strictes pour une meilleure qualité de code
+    "esModuleInterop": true,           // Supporte CommonJS et ESModules
+    "forceConsistentCasingInFileNames": true, // Évite les problèmes liés à la casse des fichiers
+    "skipLibCheck": true,              // Accélère la compilation en sautant la vérification des fichiers de bibliothèque
+    "outDir": "./dist",                // Place les fichiers transpilés dans un dossier dédié
+    "rootDir": "./src",                // Définit le répertoire racine des fichiers sources
+    "sourceMap": true,                 // Génère des fichiers source map pour le débogage
+    "noUnusedLocals": false,           // Permet des variables inutilisées temporairement
+    "noUnusedParameters": false,       // Permet des paramètres inutilisés
+    "moduleResolution": "node",        // Résolution des modules à la manière de Node.js
+    "allowSyntheticDefaultImports": true // Permet les importations par défaut synthétiques
+  },
+  "include": [
+    "src/**/*"                         // Inclut tous les fichiers TypeScript sous src/
+  ],
+  "exclude": [
+    "node_modules",                    // Exclut les modules node
+    "dist"                             // Exclut le dossier de build
+  ]
+}

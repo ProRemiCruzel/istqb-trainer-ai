@@ -1,0 +1,34 @@
+{
+  "name": "istqb-trainer-app",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "serve": "parcel serve src/index.html",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js,css,html}'",
+    "format:check": "prettier --check 'src/**/*.{ts,tsx,js,css,html}'"
+  },
+  "targets": {
+    "default": {
+      "distDir": "dist",
+      "publicUrl": "/"
+    }
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "marked": "^15.0.3",
+    "openai": "^4.75.0",
+    "parcel": "^2.13.2",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}
