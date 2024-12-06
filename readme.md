@@ -24,8 +24,6 @@ yarn install
 2. Create a .env file at the root of the project with your OpenAI API key:
 ```yaml
 OPENAI_API_KEY=your_api_key_here
-```
-```bash
 ASSISTANT_ID=your_assistant_id
 ```
 
